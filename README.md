@@ -1,4 +1,4 @@
 flashit
 =======
 
-A bookmarlet for generating flash codes
+A javascript bookmarlet for generating flash codes
