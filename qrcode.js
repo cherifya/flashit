@@ -1,4 +1,4 @@
-//javascript:(function(){document.body.appendChild(document.createElement('script')).src='qrcode.js';})();
+//javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://raw.github.com/cherifya/flashit/master/qrcode.js';})();
 
 (function () {
     var overlayPanel = null;
@@ -26,7 +26,7 @@
     }
     
     function buildQrCodeURL(link) {
-        var url  = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=" + encodeURIComponent(link);
+        var url  = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chld=L|1&chl=" + encodeURIComponent(link);
         return url;
                 
     }
