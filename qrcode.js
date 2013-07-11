@@ -39,7 +39,8 @@
         css = css + '#qrPanel #closeDiv {  position:absolute; top:5px; right:10px; color: black; font-weight:bold; cursor:pointer;} #closeDiv:hover {text-decoration: underline;} ';
         var style = document.createElement('style');
         style.innerHTML = css;
-        document.head.appendChild(style);
+        if (document.head) document.head.appendChild(style);
+        else if (document.body) document.body.appendChild(style);
     }
 
     function closePanel() {
